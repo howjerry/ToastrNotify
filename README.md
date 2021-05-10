@@ -1,2 +1,7 @@
 # ToastrNotify
-使用套件 toastr.js ，擴充 HtmlHelper
+Use [toastr](https://github.com/CodeSeven/toastr/)
+
+##　Installation
+```
+Install-Package CHC.ToastrNotify
+```
