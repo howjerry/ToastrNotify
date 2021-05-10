@@ -27,3 +27,6 @@ Install-Package CHC.ToastrNotify
             return View();
         }
 ```
+
+## Options
+[examples](https://codeseven.github.io/toastr/demo.html)
