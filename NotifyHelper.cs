@@ -67,11 +67,11 @@ namespace CHC.ToastrNotify
         /// </summary>
         /// <param name="target">HtmlHelper</param>
         /// <returns>HtmlString</returns>
-        public static HtmlString Notify(this HtmlHelper target)
+        public static IHtmlString Notify(this HtmlHelper target)
         {
             var notifys = HttpContext.Current.Session[KEY] as List<NotifyByToastr>;
             HttpContext.Current.Session.Remove(KEY);
-            if (notifys == null) return new HtmlString(null);
+            if (notifys == null) return null;
 
             var result = new StringBuilder();
             foreach (var item in notifys)
