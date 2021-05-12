@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHC.ToastrNotify", "CHC.ToastrNotify.csproj", "{7B82F345-2372-4D15-BF0A-587C2D417809}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHC.ToastrNotify.Web", "..\CHC.ToastrNotify.Web\CHC.ToastrNotify.Web.csproj", "{DAABD220-DECB-427D-85AA-CDFE97005259}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7B82F345-2372-4D15-BF0A-587C2D417809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B82F345-2372-4D15-BF0A-587C2D417809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B82F345-2372-4D15-BF0A-587C2D417809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAABD220-DECB-427D-85AA-CDFE97005259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAABD220-DECB-427D-85AA-CDFE97005259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAABD220-DECB-427D-85AA-CDFE97005259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAABD220-DECB-427D-85AA-CDFE97005259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

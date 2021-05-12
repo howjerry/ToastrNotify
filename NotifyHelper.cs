@@ -20,9 +20,9 @@ namespace CHC.ToastrNotify
         public static void Append(NotifyType type, string message, string title = null)
         {
             List<NotifyByToastr> notifys;
-            if (HttpContext.Current.Session[KEY] != null)
+            if (HttpContext.Current.Items[KEY] != null)
             {
-                notifys = HttpContext.Current.Session[KEY] as List<NotifyByToastr>;
+                notifys = HttpContext.Current.Items[KEY] as List<NotifyByToastr>;
                 notifys.Add(Builber(type, message, title));
             }
             else
@@ -31,7 +31,7 @@ namespace CHC.ToastrNotify
                 notifys.Add(Builber(type, message, title));
             }
 
-            HttpContext.Current.Session[KEY] = notifys;
+            HttpContext.Current.Items[KEY] = notifys;
         }
         /// <summary>
         /// 建立 NotifyByToastr
@@ -69,8 +69,8 @@ namespace CHC.ToastrNotify
         /// <returns>HtmlString</returns>
         public static IHtmlString Notify(this HtmlHelper target)
         {
-            var notifys = HttpContext.Current.Session[KEY] as List<NotifyByToastr>;
-            HttpContext.Current.Session.Remove(KEY);
+            var notifys = HttpContext.Current.Items[KEY] as List<NotifyByToastr>;
+            
             if (notifys == null) return null;
 
             var result = new StringBuilder();
