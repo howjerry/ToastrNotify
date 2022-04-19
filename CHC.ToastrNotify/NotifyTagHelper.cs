@@ -7,7 +7,6 @@ namespace CHC.ToastrNotify
     [HtmlTargetElement("toastr-notify")]
     public class NotifyTagHelper : TagHelper
     {
-        private const string IterateOverAttr = "notify-items";
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly ITempDataDictionaryFactory _tempDataDictionaryFactory;
 
