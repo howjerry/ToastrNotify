@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CHC.ToastrNotify
+namespace CHC.AspNetCore.SweetAlert2Notify
 {
     public enum NotifyType
     {

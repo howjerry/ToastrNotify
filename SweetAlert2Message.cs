@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CHC.ToastrNotify
+namespace CHC.AspNetCore.SweetAlert2Notify
 {
-    internal class NotifyByToastr
+    internal class SweetAlert2Message
     {
         public string type { get; set; }
         public string title { get; set; }

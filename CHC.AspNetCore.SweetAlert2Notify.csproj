@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>CHC.AspNetCore.SweetAlert2Notify</AssemblyName>
+    <RootNamespace>CHC.AspNetCore.SweetAlert2Notify</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>CHC</Authors>
+    <Description>A helper library for ASP.NET Core MVC to display server-side generated notifications using SweetAlert2.</Description>
+    <PackageId>CHC.AspNetCore.SweetAlert2Notify</PackageId>
+    <PackageTags>aspnetcore;mvc;notifications;sweetalert2;razor;toast</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/your-repo/CHC.AspNetCore.SweetAlert2Notify</PackageProjectUrl> <!-- Placeholder -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+</Project>
